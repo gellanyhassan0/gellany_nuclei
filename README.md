@@ -46,8 +46,8 @@ We have a [dedicated repository](https://github.com/projectdiscovery/nuclei-temp
 <code>docker image list</code><br>
 <code>docker tag f6abdd5bf9e8 gellany/gellany_nuclei</code><br>
 <code>docker push gellany/gellany_nuclei:latest</code><br>  
-<code>docker run --publish 80:80 -i -t f6abdd5bf9e8 -u http://testphp.vulnweb.com/</code><br>
-
+<code>docker run --publish 80:80 -i -t f6abdd5bf9e8 -u http://testphp.vulnweb.com -t /root/nuclei-templates/</code><br>
+<code>docker run --publish 80:80 -i -t f6abdd5bf9e8 -u http://testphp.vulnweb.com -t cves/ -t exposures/ </code><br>
 
 ## How it works
 
