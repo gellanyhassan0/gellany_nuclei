@@ -40,6 +40,11 @@ Nuclei is used to send requests across targets based on a template, leading to z
 We have a [dedicated repository](https://github.com/projectdiscovery/nuclei-templates) that houses various type of vulnerability templates contributed by **more than 300** security researchers and engineers.
 
 ## Docker Deploy
+<code>apt-get install golang</code><br>
+<code>go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest</code><br>
+<code>/root/go/bin/nuclei update-templates</code><br>
+<code>/root/go/bin/nuclei -u https://example.com </code><br>
+
 <code>docker image build -t gellany_nuclei /home/go/nuclei</code><br>
 <code>docker image list</code><br>
 <code>docker run --publish 80:80 -i -t f6abdd5bf9e8 -h</code><br>
